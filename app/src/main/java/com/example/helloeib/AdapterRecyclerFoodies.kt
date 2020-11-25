@@ -1,3 +1,4 @@
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,18 +14,19 @@ import com.example.helloeib.ItemFoodPost
 import com.example.helloeib.R
 import kotlinx.android.synthetic.main.item_favorite_food.view.*
 
-class AdapterRecyclerFoodies: RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+class AdapterRecyclerFoodies (var context:Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var items: List<ItemFoodPost> = ArrayList()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return FoodViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.item_favorite_food,parent,false)
+                LayoutInflater.from(parent.context).inflate(R.layout.item_favorite_food, parent, false), context
+
         )
 
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        when(holder){
-            is FoodViewHolder ->{
+        when (holder) {
+            is FoodViewHolder -> {
                 holder.bind(items.get(position))
             }
         }
@@ -34,26 +36,26 @@ class AdapterRecyclerFoodies: RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         return items.size
     }
 
-    fun submitList(foodList: List<ItemFoodPost>){
-         items = foodList
+    fun submitList(foodList: List<ItemFoodPost>) {
+        items = foodList
 
     }
+
     class FoodViewHolder constructor(
-        itemView: View
-    ): RecyclerView.ViewHolder(itemView){
+            itemView: View, var context: Context
+    ) : RecyclerView.ViewHolder(itemView) {
 
         val textViewTituloFavFood = itemView.findViewById(R.id.textViewTituloFavFood) as TextView?
         val textViewContentRecycler = itemView.findViewById(R.id.textViewContentRecycler) as TextView?
         val imageButtonRecycler = itemView.findViewById(R.id.imageButtonRecycler) as ImageView?
 
-        fun bind(itemFoodPost: ItemFoodPost)
-        {
+        fun bind(itemFoodPost: ItemFoodPost) {
 
             textViewTituloFavFood?.setText(itemFoodPost.foodTitle)
             textViewContentRecycler?.setText(itemFoodPost.contentFood)
-            val requestOption= RequestOptions()
-                .placeholder(R.drawable.ic_guiso)
-                .error(R.drawable.ic_guiso)
+            val requestOption = RequestOptions()
+                    .placeholder(R.drawable.ic_guiso)
+                    .error(R.drawable.ic_guiso)
             if (imageButtonRecycler != null) {
                 Glide.with(itemView.context)
                         .applyDefaultRequestOptions(requestOption)

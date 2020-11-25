@@ -20,7 +20,7 @@ public class FoodActivity : AppCompatActivity() {
     private fun initRecyclerView(){
         recyclerViewHistoricalFoodies.apply{
             layoutManager = LinearLayoutManager(this@FoodActivity)
-            foodAdapter = AdapterRecyclerFoodies()
+            foodAdapter = AdapterRecyclerFoodies(this@FoodActivity)
             val data = DataFoodies.createDataFoodSet()
             foodAdapter.submitList(data)
             adapter = foodAdapter

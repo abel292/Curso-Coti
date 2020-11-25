@@ -17,14 +17,14 @@ class LoginActivity : AppCompatActivity() {
         var edit_user_password = findViewById(R.id.editTextPassword) as EditText
 
 
-
         val button = findViewById<Button>(R.id.btnIngresarLogin)
         button.setOnClickListener {
 
 
             if (edit_user_name.text.toString().toLowerCase() == "abelito") {
 
-                Toast.makeText(this, "Lo siento Abelito, tu de aquí no pasas", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Lo siento Abelito, tu de aquí no pasas", Toast.LENGTH_LONG)
+                    .show()
 
 
             } else {
@@ -34,8 +34,6 @@ class LoginActivity : AppCompatActivity() {
                 intent.putExtra("extraAbeligno", editTextUser.text.toString())
 
                 startActivity(intent)
-
-
 
 
             }
