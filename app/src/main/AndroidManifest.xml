@@ -3,12 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.helloeib">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-
-
 
     <application
         android:allowBackup="true"
@@ -17,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".DataFoodies"
+        <activity android:name=".DialogFragmentRecyclerFood"></activity>
+        <activity
+            android:name=".DataFoodies"
             tools:ignore="Instantiatable" />
         <activity android:name=".FoodActivity" />
         <activity android:name=".LoginActivity">

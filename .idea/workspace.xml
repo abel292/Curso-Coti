@@ -22,29 +22,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0627a89c-eda5-4ec0-b973-2914c5378c49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_foodies_recycler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/DialogFragmentRecyclerFood.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_fragment_recycler_food.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/AdapterRecyclerFoodies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/AdapterRecyclerFoodies.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/DataFoodies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/DataFoodies.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/FirstFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/FoodActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/FoodActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/ItemFoodPost.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/ItemFoodPost.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/helloeib/LoginActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_favorite_food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_favorite_food.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_favorite_food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_favorite_food.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_alfajor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bulanga.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_guiso.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,17 +86,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.542605558">
+    <key name="android.template.741316739">
       <recent name="com.example.helloeib" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="" />
       <recent name="com.example.helloeib" />
     </key>
+    <key name="android.template.542605558">
+      <recent name="com.example.helloeib" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.helloeib" />
     </key>
-    <key name="android.template.741316739">
+    <key name="android.template.-1404897124">
       <recent name="com.example.helloeib" />
     </key>
     <key name="android.template.-1028836816">
@@ -212,14 +201,14 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="0" y="58" key="#com.intellij.ide.util.MemberChooser/0.0.1304.768@0.0.1304.768" timestamp="1605896501897" />
-    <state x="316" y="67" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606310407236">
+    <state x="316" y="67" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606334747636">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="316" y="67" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1606310407236" />
-    <state x="229" y="128" key="AndroidCreateResourceFileDialog" timestamp="1606308159331">
+    <state x="316" y="67" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1606334747636" />
+    <state x="229" y="128" key="AndroidCreateResourceFileDialog" timestamp="1606334768742">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="229" y="128" key="AndroidCreateResourceFileDialog/0.0.1304.768@0.0.1304.768" timestamp="1606308159331" />
+    <state x="229" y="128" key="AndroidCreateResourceFileDialog/0.0.1304.768@0.0.1304.768" timestamp="1606334768742" />
     <state x="378" y="78" key="FileChooserDialogImpl" timestamp="1605638856994">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
