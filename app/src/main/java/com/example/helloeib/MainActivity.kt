@@ -2,11 +2,8 @@ package com.example.helloeib
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.activity_login.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +24,14 @@ class MainActivity : AppCompatActivity() {
 
         imageButtonFFood.setOnClickListener {
 
-            val intent = Intent(this, FoodActivity::class.java)
+            val intent = Intent(this, ActivityFood::class.java)
+            startActivity(intent)
+        }
+
+
+        imageButtonNavComponent.setOnClickListener {
+
+            val intent = Intent(this, ActivityTestNavComponent::class.java)
             startActivity(intent)
         }
 
