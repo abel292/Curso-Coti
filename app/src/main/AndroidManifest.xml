@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ActivityTestNavComponent"></activity>
+        <activity android:name=".NavigationFoodActivity"></activity>
+        <activity android:name=".ActivityTestNavComponent" />
         <activity android:name=".ActivityWebViewPopupImages" />
         <activity android:name=".RecyclerFoodImageDialogFragment" />
         <activity
