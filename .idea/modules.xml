@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/.idea/Curso-Coti.iml" filepath="$PROJECT_DIR$/.idea/Curso-Coti.iml" />
-=======
->>>>>>> master
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Hello_Eib.iml" filepath="$PROJECT_DIR$/.idea/modules/Hello_Eib.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Hello_Eib.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Hello_Eib.app.iml" />
     </modules>

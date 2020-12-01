@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         imageButtonNavComponent.setOnClickListener {
 
-            val intent = Intent(this, ActivityTestNavComponent::class.java)
+            val intent = Intent(this, NavigationFoodActivity::class.java)
             startActivity(intent)
         }
 

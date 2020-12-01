@@ -14,30 +14,40 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        var edit_user_name = findViewById(R.id.editTextUser) as EditText
-        var edit_user_password = findViewById(R.id.editTextPassword) as EditText
-
-        edit_user_name.setInputType(InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_SENTENCES)
+        editTextUser.setInputType(InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_SENTENCES)
 
 
-        val button = findViewById<Button>(R.id.btnIngresarLogin)
-        button.setOnClickListener {
+        btnIngresarLogin.setOnClickListener {
 
-            if (edit_user_name.text.toString().toLowerCase() == "abelito") {
+            val userName: String = editTextUser.text.toString().toLowerCase()
+            val userPassword: String = editTextPassword.text.toString()
 
-                Toast.makeText(this, "Lo siento Abelito, tu de aquí no pasas", Toast.LENGTH_LONG).show()
-            } else {
+            if (userName.trim().isEmpty() || userPassword.trim().isEmpty()) {
+                Toast.makeText(this, "Debes Ingresar Usuario y Contraseña", Toast.LENGTH_LONG)
+                    .show()
 
 
-                val intent = Intent(this, MainActivity::class.java)
-                intent.putExtra("extraAbeligno", editTextUser.text.toString())
+            } else
+                if (userName == "abelito") {
 
-                startActivity(intent)
+                    Toast.makeText(
+                        this,
+                        "Lo siento Abelito, tu de aquí no pasas",
+                        Toast.LENGTH_LONG
+                    ).show()
+                } else {
 
-            }
 
+                    val intent = Intent(this, MainActivity::class.java)
+                    intent.putExtra("extraAbeligno", editTextUser.text.toString())
+
+                    startActivity(intent)
+
+                }
         }
 
-
     }
+
+
 }
+

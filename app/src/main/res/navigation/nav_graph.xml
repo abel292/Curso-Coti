@@ -3,26 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
-
+    app:startDestination="@id/staffsFragment">
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.helloeib.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:id="@+id/woodFragment"
+        android:name="com.example.helloeib.WoodFragment"
+        android:label="fragment_wood"
+        tools:layout="@layout/fragment_wood" />
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.helloeib.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
+        android:id="@+id/staffsFragment"
+        android:name="com.example.helloeib.StaffsFragment"
+        android:label="fragment_staffs"
+        tools:layout="@layout/fragment_staffs" >
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_staffsFragment_to_woodFragment"
+            app:destination="@id/woodFragment" />
     </fragment>
 </navigation>
