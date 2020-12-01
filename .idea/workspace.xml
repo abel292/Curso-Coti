@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="AndroidConfiguredLogFilters">
     <filters>
       <filter>
@@ -11,11 +12,14 @@
       </filter>
     </filters>
   </component>
+=======
+>>>>>>> master
   <component name="AndroidLayouts">
     <shared>
       <config />
     </shared>
   </component>
+<<<<<<< HEAD
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="HelloEib" />
@@ -64,17 +68,29 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_favorite_food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_favorite_food.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
     </list>
+=======
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b30a06d3-1235-467b-90ba-e3fd6593c6d8" name="Default Changelist" comment="" />
+>>>>>>> master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_XL_API_30_mari]" />
+=======
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+>>>>>>> master
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+<<<<<<< HEAD
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -107,12 +123,26 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="valueResourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1k67qhiLKCiOtzvPUeP8W1FSTGS" />
+>>>>>>> master
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_XL_API_30_mari" />
+<<<<<<< HEAD
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-11-20T13:34:55.633Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -150,6 +180,16 @@
     </key>
     <key name="android.template.-40731287">
       <recent name="com.example.helloeib" />
+=======
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-11-13T12:15:02.557Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cmichel\AndroidStudioProjects\HelloEib\app\src\main\res\drawable" />
+>>>>>>> master
     </key>
   </component>
   <component name="RunManager">
@@ -160,7 +200,11 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Hello_Eib.app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+=======
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+>>>>>>> master
       <module name="Hello_Eib.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -223,15 +267,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="0627a89c-eda5-4ec0-b973-2914c5378c49" name="Default Changelist" comment="" />
       <created>1605642229941</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605642229941</updated>
+=======
+      <changelist id="b30a06d3-1235-467b-90ba-e3fd6593c6d8" name="Default Changelist" comment="" />
+      <created>1605009379634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605009379634</updated>
+>>>>>>> master
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="287" y="0" key="#Hello_Eib.app" timestamp="1606307022645">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
@@ -312,5 +365,19 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="231" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1304.768@0.0.1304.768" timestamp="1606487796491" />
+=======
+    <state x="229" y="128" key="AndroidCreateResourceFileDialog" timestamp="1605269077145">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="229" y="128" key="AndroidCreateResourceFileDialog/0.0.1304.768@0.0.1304.768" timestamp="1605269077145" />
+    <state x="378" y="78" key="FileChooserDialogImpl" timestamp="1605123596657">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="378" y="78" key="FileChooserDialogImpl/0.0.1304.768@0.0.1304.768" timestamp="1605123596657" />
+    <state x="368" y="233" width="768" height="344" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1605123394077">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="368" y="233" width="768" height="344" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1304.768@0.0.1304.768" timestamp="1605123394077" />
+>>>>>>> master
   </component>
 </project>
