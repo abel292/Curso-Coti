@@ -27,6 +27,7 @@ class RecyclerFoodImageDialogFragment(var itemFoodPost: ItemFoodPost) : DialogFr
             val uri = Uri.parse(itemFoodPost.imageDrawable)
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
+            dismiss()
         }
         view.buttonDontGoImage.setOnClickListener{
             dismiss()
