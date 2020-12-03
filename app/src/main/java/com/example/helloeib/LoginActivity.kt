@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
 
         btnIngresarLogin.setOnClickListener {
 
-            val userName: String = editTextUser.text.toString().toLowerCase()
+            val userName: String = editTextUser.text.toString().toLowerCase().trim()
             val userPassword: String = editTextPassword.text.toString()
 
             if (userName.trim().isEmpty() || userPassword.trim().isEmpty()) {

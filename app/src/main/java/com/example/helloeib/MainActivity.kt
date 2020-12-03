@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        var nameUser = intent.getStringExtra("extraAbeligno")
+        var nameUser = intent.getStringExtra("extraAbeligno").trim()
 
 
         var wellcomeText = intent.getStringExtra("extraWellcome")
