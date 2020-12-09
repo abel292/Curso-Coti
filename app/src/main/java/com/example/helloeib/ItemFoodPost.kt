@@ -5,7 +5,8 @@ import android.widget.ImageView
 data class ItemFoodPost(
         var foodTitle: String,
         var imageDrawable: String,
-        var contentFood: String
+        var contentFood: String,
+        val idFoodies: Int
 
 )
 

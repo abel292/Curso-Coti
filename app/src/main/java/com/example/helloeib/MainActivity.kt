@@ -13,8 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         var nameUser = intent.getStringExtra("extraAbeligno").trim()
-
-
         var wellcomeText = intent.getStringExtra("extraWellcome")
 
         intent.putExtra("extraWellcome", textViewWellcome.text.toString())
@@ -24,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         imageButtonFFood.setOnClickListener {
 
-            val intent = Intent(this, ActivityFood::class.java)
+            val intent = Intent(this, FoodActivity::class.java)
             startActivity(intent)
         }
 
