@@ -13,14 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".NavigationFoodActivity"></activity>
+        <activity android:name=".ImageWebViwerSearcherActivity"></activity>
+        <activity
+            android:name=".FormActivity"
+            android:label="@string/title_activity_form_acitvity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".NavigationFoodActivity" />
         <activity android:name=".ActivityTestNavComponent" />
         <activity android:name=".ActivityWebViewPopupImages" />
         <activity android:name=".RecyclerFoodImageDialogFragment" />
         <activity
             android:name=".DataFoodies"
             tools:ignore="Instantiatable" />
-        <activity android:name=".ActivityFood" />
+        <activity android:name=".FoodActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

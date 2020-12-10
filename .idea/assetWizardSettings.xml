@@ -303,8 +303,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_coding" />
-                            <entry key="sourceFile" value="C:\Users\cmichel\Desktop\PROYECTOS\KOTLIN\HELLO EIB\ASSETS\coding.svg" />
+                            <entry key="outputName" value="ic_diskette" />
+                            <entry key="sourceFile" value="C:\Users\cmichel\Desktop\PROYECTOS\KOTLIN\HELLO EIB\ASSETS\diskette.svg" />
                           </map>
                         </option>
                       </PersistentState>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".FormAcitvity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_food">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E1030303"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Ingresa una nueva comida"
+                android:textColor="#5B5B5B"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutFoodNameForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:background="#A1A1A1"
+                android:textAlignment="center"
+                android:textColorHint="#5B5B5B"
+                android:theme="@style/EditTextBlanco"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintVertical_bias="0.0">
+
+                <EditText
+                    android:id="@+id/editTextFoodNameForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:hint="Nombre Comida"
+                    android:inputType="textCapSentences"
+                    android:textAlignment="center"
+                    android:textColor="#5B5B5B"
+                    android:textColorHint="#5B5B5B"
+                    android:textSize="18dp"
+                    android:theme="@style/EditTextBlanco" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutFoodDescriptionForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:textAlignment="center"
+                android:background="#A1A1A1"
+                android:textColorHint="#5B5B5B"
+                android:theme="@style/EditTextBlanco"
+                app:errorEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutFoodNameForm">
+
+                <EditText
+                    android:id="@+id/editTextFoodDescriptionForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:hint="Descripción de la Comida"
+                    android:inputType="textCapSentences"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="18dp"
+                    android:theme="@style/EditTextBlanco" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutFoodUrlForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="70dp"
+                android:background="#A1A1A1"
+                android:textAlignment="center"
+                android:textColorHint="#5B5B5B"
+                android:theme="@style/EditTextBlanco"
+                app:errorEnabled="true"
+                app:layout_constraintEnd_toStartOf="@+id/buttonSearchUrl"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutFoodDescriptionForm">
+
+                <EditText
+                    android:id="@+id/editTextFoodUrlForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Busque nombre de comida"
+                    android:inputType="textCapSentences"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="18dp"
+                    android:theme="@style/EditTextBlanco" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/buttonSearchUrl"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:background="#868585"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="@+id/TextInputLayoutFoodUrlForm"
+                app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutFoodDescriptionForm"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintTop_toTopOf="@+id/TextInputLayoutFoodUrlForm" />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="* Deberás Pegar Aquí la Url de la foto que selecciones"
+                android:textColor="#5B5B5B"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/buttonSearchUrl"
+                app:layout_constraintStart_toStartOf="@+id/TextInputLayoutFoodUrlForm"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutFoodUrlForm" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <Button
+                    android:id="@+id/buttonSaveFormFood"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_diskette"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

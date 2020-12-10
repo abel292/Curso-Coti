@@ -5,6 +5,7 @@ plugins {
 }
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
@@ -13,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.helloeib"
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -58,6 +59,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+
 
 
 
@@ -78,6 +81,7 @@ dependencies {
     //Dialog
     def matieral_dialogs_version = "3.1.0"
     implementation "com.afollestad.material-dialogs:core:$matieral_dialogs_version"
+
 
 
 }

@@ -52,10 +52,12 @@ class AdapterRecyclerFoodies(var context: Context, var fragmentActivity: Fragmen
         itemView: View, var context: Context, var fragmentActivity: FragmentActivity
     ) : RecyclerView.ViewHolder(itemView) {
 
-        val textViewTituloFavFood = itemView.findViewById(R.id.textViewTituloFavFood) as TextView?
-        val textViewContentRecycler =
+        private val textViewTituloFavFood =
+            itemView.findViewById(R.id.textViewTituloFavFood) as TextView?
+        private val textViewContentRecycler =
             itemView.findViewById(R.id.textViewContentRecycler) as TextView?
-        val imageButtonRecycler = itemView.findViewById(R.id.imageButtonRecycler) as ImageView?
+        private val imageButtonRecycler =
+            itemView.findViewById(R.id.imageButtonRecycler) as ImageView?
 
 
         interface OnItemClickFood {
@@ -76,7 +78,6 @@ class AdapterRecyclerFoodies(var context: Context, var fragmentActivity: Fragmen
                     .load(itemFoodPost.imageDrawable)
                     .into(imageButtonRecycler)
 
-
             }
             itemView.setOnClickListener {
                 var recyclerFoodImageDialogFragment = RecyclerFoodImageDialogFragment(itemFoodPost)
@@ -88,9 +89,6 @@ class AdapterRecyclerFoodies(var context: Context, var fragmentActivity: Fragmen
         }
     }
 
-    interface OnItemClickFood {
-
-    }
 }
 
 
