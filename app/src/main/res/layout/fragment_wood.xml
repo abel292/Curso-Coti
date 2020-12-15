@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cat_see"
     tools:context=".WoodFragment">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#C6000000">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.gms.maps.MapView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -20,21 +20,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-
-            <TextView
-                android:id="@+id/buttonReceptorOfTheTruth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RECEPTOR DE LA VERDAD"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+        </com.google.android.gms.maps.MapView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

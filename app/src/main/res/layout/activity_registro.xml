@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroFragment">
+    tools:context=".RegistroActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -46,11 +46,10 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/TextInputLayoutUserNameRegister"
+            android:id="@+id/TextInputLayoutEmailRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/shape_edit_form"
             android:textAlignment="center"
@@ -61,84 +60,49 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintVertical_bias="0.23000002">
 
             <EditText
-                android:id="@+id/editTextUserNameRegister"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:gravity="center"
-                android:hint="@string/name_register"
-                android:inputType="textCapSentences"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="18dp"
-                android:theme="@style/EditTextBlanco" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/TextInputLayoutNickNameRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/shape_edit_form"
-            android:textAlignment="center"
-            android:textColorHint="@color/white"
-            android:theme="@style/EditTextBlanco"
-            app:errorEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutUserNameRegister">
-
-            <EditText
-                android:id="@+id/editTextUserNickNameRegister"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:gravity="center"
-                android:hint="@string/user_nick"
-                android:inputType="textCapSentences"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                android:textSize="18dp"
-                android:theme="@style/EditTextBlanco" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/TextInputLayoutEmailRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/shape_edit_form"
-            android:textAlignment="center"
-            android:textColorHint="@color/white"
-            android:theme="@style/EditTextBlanco"
-            app:errorEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutNickNameRegister">
-
-            <EditText
-                android:id="@+id/editTextUserEmailRegister"
+                android:id="@+id/editTextUserEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:gravity="center"
                 android:hint="@string/email"
-                android:inputType="textCapSentences"
+                android:inputType="text"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
+                android:textSize="18dp"
+                android:theme="@style/EditTextBlanco" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/shape_edit_form"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:theme="@style/EditTextBlanco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutEmailRegister">
+
+            <EditText
+                android:id="@+id/editTextNickName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:hint="@string/user_nick"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="18dp"
                 android:theme="@style/EditTextBlanco" />
 
@@ -157,45 +121,15 @@
             android:theme="@style/EditTextBlanco"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutEmailRegister">
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutNickName">
 
             <EditText
-                android:id="@+id/editTextPasswordRegistro"
+                android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:gravity="center"
                 android:hint="@string/pass_register"
-                android:inputType="textPassword"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="18dp"
-                android:theme="@style/EditTextBlanco" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutRepeatPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/shape_edit_form"
-            android:textAlignment="center"
-            android:textColorHint="@color/white"
-            android:theme="@style/EditTextBlanco"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword">
-
-            <EditText
-                android:id="@+id/editTextRepeatPasswordRegistro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:gravity="center"
-                android:hint="@string/repeat_pass_register"
                 android:inputType="textPassword"
                 android:textAlignment="center"
                 android:textColor="@color/white"
@@ -217,7 +151,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRepeatPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword" />
 
 
 

@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:text="Ready?"
+                android:text="Listo?"
                 android:textColor="@color/white"
                 android:textSize="30dp"
                 android:textStyle="bold"
@@ -60,7 +60,7 @@
                 app:layout_constraintVertical_bias="0.24000001">
 
                 <EditText
-                    android:id="@+id/editTextUser"
+                    android:id="@+id/editTextUserEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"

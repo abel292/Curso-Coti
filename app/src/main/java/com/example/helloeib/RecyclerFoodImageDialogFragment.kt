@@ -5,6 +5,7 @@ import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Color.TRANSPARENT
+import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,7 @@ class RecyclerFoodImageDialogFragment(var itemFoodPost: ItemFoodPost) : DialogFr
         val view =
             LayoutInflater.from(context).inflate(R.layout.dialog_fragment_recycler_food, null)
 
+
         view.buttonGoImage.setOnClickListener {
             val uri = Uri.parse(itemFoodPost.imageDrawable)
             val intent = Intent(Intent.ACTION_VIEW, uri)
@@ -32,6 +34,13 @@ class RecyclerFoodImageDialogFragment(var itemFoodPost: ItemFoodPost) : DialogFr
             dismiss()
         }
 
-        return AlertDialog.Builder(context).setView(view).create()
+
+        val alertDialog = AlertDialog.Builder(context).setView(view).create().apply {
+            this.window!!.setBackgroundDrawable(ColorDrawable(TRANSPARENT))
+
+        }
+
+
+        return alertDialog
     }
 }
