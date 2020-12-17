@@ -24,7 +24,7 @@ class StaffsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         buttonOfTheTruth.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_staffsFragment_to_woodFragment)
+            Navigation.findNavController(view).navigate(R.id.action_staffsFragment_to_mapNavFragment)
         }
 
     }

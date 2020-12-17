@@ -1,5 +1,6 @@
 package com.example.helloeib
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_home.*
 
 class MainActivity : AppCompatActivity() {
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -24,6 +26,13 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, FoodActivity::class.java)
             startActivity(intent)
+        }
+
+        buttonMap.setOnClickListener{
+
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
+
         }
 
 

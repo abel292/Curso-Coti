@@ -9,39 +9,44 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_food">
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#E1030303"
+            android:background="#D5030303"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#5B5B5B"
+                android:paddingTop="15dp"
                 android:text="Ingresa una nueva comida"
-                android:textColor="#5B5B5B"
-                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.120000005" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TextInputLayoutFoodNameForm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginEnd="20dp"
-                android:background="#A1A1A1"
+                android:background="@drawable/shape_edit_form"
                 android:textAlignment="center"
                 android:textColorHint="#5B5B5B"
                 android:theme="@style/EditTextBlanco"
@@ -73,10 +78,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_edit_form"
                 android:textAlignment="center"
-                android:background="#A1A1A1"
                 android:textColorHint="#5B5B5B"
                 android:theme="@style/EditTextBlanco"
                 app:errorEnabled="true"
@@ -105,9 +110,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="70dp"
-                android:background="#A1A1A1"
+                android:background="@drawable/shape_edit_form"
                 android:textAlignment="center"
                 android:textColorHint="#5B5B5B"
                 android:theme="@style/EditTextBlanco"
@@ -135,7 +140,7 @@
                 android:id="@+id/buttonSearchUrl"
                 android:layout_width="40dp"
                 android:layout_height="0dp"
-                android:background="#868585"
+                android:background="@drawable/shape_edit_form"
                 android:src="@drawable/ic_search"
                 app:layout_constraintBottom_toBottomOf="@+id/TextInputLayoutFoodUrlForm"
                 app:layout_constraintEnd_toEndOf="@+id/TextInputLayoutFoodDescriptionForm"
@@ -149,17 +154,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="* Deberás Pegar Aquí la Url de la foto que selecciones"
-                android:textColor="#5B5B5B"
+                android:textColor="#FFFFFF"
                 android:textSize="14dp"
                 app:layout_constraintEnd_toEndOf="@+id/buttonSearchUrl"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/TextInputLayoutFoodUrlForm"
                 app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutFoodUrlForm" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="70dp"
+                android:background="#210101"
                 android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
