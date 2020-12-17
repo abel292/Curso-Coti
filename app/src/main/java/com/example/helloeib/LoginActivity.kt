@@ -68,7 +68,7 @@ class LoginActivity : AppCompatActivity() {
                     startActivity(intent)
 
                 } catch (e: Exception) {
-                    Toast.makeText(this, "El usuario no se encuentra registrado", Toast.LENGTH_LONG)
+                    Toast.makeText(this, "El usuario no se encuentra registrado, o la contraseña es incorrecta", Toast.LENGTH_LONG)
                         .show()
 
 

@@ -5,18 +5,23 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/staffsFragment">
     <fragment
-        android:id="@+id/woodFragment"
-        android:name="com.example.helloeib.WoodFragment"
-        android:label="fragment_wood"
-        tools:layout="@layout/fragment_wood" />
+        android:id="@+id/activityMap"
+        android:name="com.example.helloeib.MapActivity"
+        android:label="@string/title_activity_map"
+        tools:layout="@layout/activity_map" />
     <fragment
         android:id="@+id/staffsFragment"
         android:name="com.example.helloeib.StaffsFragment"
         android:label="fragment_staffs"
         tools:layout="@layout/fragment_staffs">
         <action
-            android:id="@+id/action_staffsFragment_to_woodFragment"
-            app:destination="@id/woodFragment" />
+            android:id="@+id/action_staffsFragment_to_mapNavFragment"
+            app:destination="@id/mapNavFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mapNavFragment"
+        android:name="com.example.helloeib.MapNavFragment"
+        android:label="fragment_map_nav"
+        tools:layout="@layout/fragment_map_nav" />
 
 </navigation>
