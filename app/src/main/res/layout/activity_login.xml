@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
                 android:fontFamily="@font/raleway_regular"
-                android:text="Listo?"
+                android:text="Hello Eib"
                 android:textColor="@color/white"
                 android:textSize="30dp"
                 android:textStyle="bold"
