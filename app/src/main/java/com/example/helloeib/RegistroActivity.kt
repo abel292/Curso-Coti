@@ -8,6 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_registro.*
+import java.util.*
 
 class RegistroActivity : AppCompatActivity() {
 
@@ -34,7 +35,8 @@ class RegistroActivity : AppCompatActivity() {
         buttonRegistrarme.setOnClickListener {
 
 
-            val userEmail: String = editTextUserEmail.text.toString().toLowerCase().trim()
+            val userEmail: String =
+                editTextUserEmail.text.toString().toLowerCase(Locale.ROOT).trim()
             val userPassword: String = editTextPassword.text.toString()
             val userNick: String = editTextPassword.text.toString()
 
@@ -60,8 +62,6 @@ class RegistroActivity : AppCompatActivity() {
             }
         }
     }
-
-
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
@@ -74,10 +74,8 @@ class RegistroActivity : AppCompatActivity() {
     private fun showLogin(email: String) {
         val loginIntent: Intent = Intent(this, LoginActivity::class.java).apply {
             putExtra("email", email)
-            Toast.makeText(  this@RegistroActivity,"Usuario registrado", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@RegistroActivity, "Usuario registrado", Toast.LENGTH_LONG).show()
         }
         startActivity(loginIntent)
-
     }
-
 }

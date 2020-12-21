@@ -28,12 +28,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        buttonMap.setOnClickListener{
-
-            val intent = Intent(this, MapActivity::class.java)
-            startActivity(intent)
-
-        }
 
 
         imageButtonNavComponent.setOnClickListener {
