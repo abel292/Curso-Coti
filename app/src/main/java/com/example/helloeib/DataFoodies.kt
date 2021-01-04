@@ -50,7 +50,7 @@ class DataFoodies {
             )
             list.add(
                 ItemFoodPost(
-                    "Asado",
+                    "Asado con papas",
                     "https://images.pexels.com/photos/3821692/pexels-photo-3821692.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
                     "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati",
                     5

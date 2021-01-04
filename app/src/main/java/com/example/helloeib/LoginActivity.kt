@@ -10,6 +10,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_form.*
 import kotlinx.android.synthetic.main.activity_login.*
 import java.lang.Exception
 
@@ -37,11 +38,15 @@ class LoginActivity : AppCompatActivity() {
         bundle.putString("message", "Integración de Firebase completa")
         analytics.logEvent("InitScreen", bundle)
 
-
         editTextUserEmail.setInputType(InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_SENTENCES)
 
 
         btnRegistroLogin.setOnClickListener {
+
+            editTextUserEmail.setText("")
+            editTextPassword.setText("")
+
+
             val intent = Intent(this, RegistroActivity::class.java)
             startActivity(intent)
         }
@@ -58,29 +63,34 @@ class LoginActivity : AppCompatActivity() {
                     .show()
 
 
-            }
-            auth.signInWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener {
+            } else {
 
-                try {
-                    var usuario = it.result?.user
-                    val intent = Intent(this, MainActivity::class.java)
-                    intent.putExtra("extraAbeligno", editTextUserEmail.text.toString())
-                    startActivity(intent)
+                auth.signInWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener {
 
-                } catch (e: Exception) {
-                    Toast.makeText(this, "El usuario no se encuentra registrado, o la contraseña es incorrecta", Toast.LENGTH_LONG)
-                        .show()
+                    try {
+                        var usuario = it.result?.user
+                        val intent = Intent(this, MainActivity::class.java)
+                        intent.putExtra("extraAbeligno", editTextUserEmail.text.toString())
+                        startActivity(intent)
+
+                    } catch (e: Exception) {
+                        Toast.makeText(
+                            this,
+                            "El usuario no se encuentra registrado, o la contraseña es incorrecta",
+                            Toast.LENGTH_LONG
+                        )
+                            .show()
 
 
-                } finally {
-                    Toast.makeText(this, "El proceso terminó", Toast.LENGTH_LONG).show()
+                    } finally {
+                        Toast.makeText(this, "El proceso terminó", Toast.LENGTH_LONG).show()
 
+
+                    }
 
                 }
-
             }
         }
-
 
     }
 
